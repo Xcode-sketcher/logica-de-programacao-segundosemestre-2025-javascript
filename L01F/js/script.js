@@ -1,19 +1,6 @@
-const trocaA = document.querySelector('#A');
-const trocaB = document.querySelector('#B');
-const resultado = document.querySelector('.resultado');
-const trocar = document.querySelector('.trocar');
-
-
-trocar.addEventListener('click', () => {
-    const c = trocaB.value;
-    let b = trocaA.value;
-    let a = c;
-
-    if(!a | !b ) {
-        alert("Preencha todos os campos");
-        return console.error("Preencha todos os campos de entrada.");
-    }
-    
-    resultado.innerHTML = '';
-    resultado.innerHTML = `<p>Valores trocados</p><p>A:${a}</p><p>B:${b}</p>`;
-});
+let a = prompt("Digite o valor de A:");
+let b = prompt("Digite o valor de B:");
+let c = a;
+a = b;
+b = c;
+alert("Valores originais:\nA original: " + c + "\nB original: " + a + "\n\nApós a troca:\nA: " + a + "\nB: " + b);
